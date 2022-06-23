@@ -43,11 +43,10 @@
 body {
   font-family: "Roboto","Arial",sans-serif;
   margin: 0;
+  overflow-x: hidden;
 
 }
-.intro{
-  overflow: hidden;
-}
+
 a {
   text-decoration: none;
   display: inline-block;
@@ -129,8 +128,8 @@ background-size: cover;
   content: "";
   background-image: url("../images/image\ 40.png");
   background-position: center;
-  top: -80px;
-  left: -80px;
+  top: -10%;
+  left: -10%;
 
 }
 .grey{
@@ -196,8 +195,8 @@ background-repeat: no-repeat;
 background-position: left;
 content: "";
 position: absolute;
-top: -148px;
-left: -338px;
+top: -42%;
+left: -31%;
 }
 .card-item:nth-child(4)::before {
   width:  450px;
@@ -208,8 +207,8 @@ background-repeat: no-repeat;
 background-position: left;
 content: "";
 position: absolute;
-top: 0px;
-left: -468px;
+top: 0%;
+left: -39%;
 }
 .card-item:nth-child(2)::after {
   width:  450px;
@@ -220,8 +219,8 @@ left: -468px;
   background-position: right,right 50px top 150px;
   content: "";
   position: absolute;
-  bottom: -200px;
-  right: -402px;
+  bottom: -56%;
+  right: -37%;
 }
 .card-item:nth-child(even) {
 -webkit-box-orient: horizontal;
