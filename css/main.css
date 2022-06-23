@@ -265,13 +265,13 @@ margin: 0 auto;
   background-size: cover;
 }
 .card-item:nth-child(2) .coffe-img::before {
-  background-image: url("../images/kopi3.png");
+  background-image: url("../images/kopi1.png");
 }
 .card-item:nth-child(3) .coffe-img::before {
-  background-image: url("../images/kopi2.png");
+  background-image: url("../images/kopi3.png");
 }
 .card-item:nth-child(4) .coffe-img::before {
-  background-image: url("../images/kopi1.png");
+  background-image: url("../images/kopi2.png");
 }
 .texts {
 margin-right: 100px;
