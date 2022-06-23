@@ -174,6 +174,7 @@ color: var(--main-text-color-white);
   background-size:cover ;
 }
 .collection-title {
+  text-transform: uppercase;
   margin: 0 ;
   text-align: center;
   font-weight: 700;
@@ -187,36 +188,36 @@ color: var(--main-title-color-black);
   padding: 0;
 }
 .card-item:nth-child(1)::before {
-width: 402px;
-height: 300px;
+width:  450px;
+height: 375px;
 background-image: url("../images/leaves2.svg");
 background-size: contain;
 background-repeat: no-repeat;
-background-position: center;
+background-position: left;
 content: "";
 position: absolute;
-top: -100px;
-left: -362px;
+top: -148px;
+left: -338px;
 }
 .card-item:nth-child(4)::before {
-width: 402px;
-height: 300px;
+  width:  450px;
+  height: 375px;
 background-image: url("../images/leaves3.svg");
 background-size: contain;
 background-repeat: no-repeat;
-background-position: center;
+background-position: left;
 content: "";
 position: absolute;
 top: 0px;
-left: -402px;
+left: -468px;
 }
 .card-item:nth-child(2)::after {
-  width: 402px;
-  height: 300px;
+  width:  450px;
+  height: 375px;
   background-image: url("../images/leaves4.svg"),url("../images/leaves1.svg");
   background-size: contain,250px;
   background-repeat: no-repeat;
-  background-position: center,bottom 30px right 40px;
+  background-position: right,right 50px top 150px;
   content: "";
   position: absolute;
   bottom: -200px;
@@ -228,8 +229,16 @@ left: -402px;
     -ms-flex-direction: row-reverse;
         flex-direction: row-reverse;
 }
+.card-item:nth-child(even) .coffe-img {
+  margin-left: 120px;
+  margin-right: 0;
+}
 .card-item:nth-child(even) .texts {
   margin-left: 100px;
+  margin-right: 0;
+}
+.card-item:nth-child(4) .coffe-img {
+margin-left: 138px;
   margin-right: 0;
 }
 .card-item {
@@ -269,6 +278,7 @@ margin: 0 auto;
 margin-right: 100px;
 }
 .coffe-title {
+  text-transform: uppercase;
   margin: 0 0 10px 0;
   font-weight: 500;
   font-size: 48px;
@@ -276,6 +286,7 @@ margin-right: 100px;
   color: var(--main-text-color-black);
 }
 .coffe-text {
+  width: 400px;
   margin: 0;
   font-weight: 400;
   font-size: 22px;
