@@ -292,3 +292,193 @@ margin-right: 100px;
   line-height: 34px;
   color: var(--main-text-color-black);
 }
+.why-choose-inner {
+
+  margin: 0 20px 20px 20px;
+  background-image: url('../images/Group\ 3616.png');
+}
+.content {
+  padding: 50px 0 500px 0;
+  margin: 0 auto;
+  text-align: center;
+  width: 581px;
+}
+.content-title {
+  color: var(--main-text-color-white);
+  font-weight: 700;
+font-size: 50px;
+line-height: 59px;
+margin: 0 0 10px 0;
+}
+.content-text {
+  margin: 0;
+  color: var(--main-text-color-white);
+  font-weight: 400;
+font-size: 16px;
+line-height: 28px;
+}
+.choose-card {
+  position: relative;
+}
+.choose-list{
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0 ;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 300px;
+}
+.choose-item:nth-child(1):before {
+  content: "";
+  width: 140px ;
+  height: 144px;
+background-image: url("../images/Group.png");
+position: absolute;
+top: -8%;
+left: -15%;
+}
+.choose-item {
+  position: relative;
+  width: 433px;
+} 
+.choose-content {
+  width: 360px;
+}
+.choose-content-title {
+  margin-top: 28px;
+  margin-bottom: 10px;
+  font-weight: 500;
+font-size: 30px;
+line-height: 35px;
+color: var(--main-text-color-black);
+}
+.choose-content-text {
+  font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+color: var(--main-text-color-black);
+}
+
+
+
+
+
+
+
+
+.how-it-works-inner {
+  padding: 50px 0;
+  margin: 289px 20px 50px 20px;
+  background-image: url("../images/Group\ 3620.png");
+}
+.how-it-works-title {
+  text-align: center;
+  margin: 0;
+  font-weight: 700;
+font-size: 50px;
+line-height: 59px;
+color: var(--main-text-color-white);
+margin-bottom: 80px;
+text-transform: uppercase;
+}
+
+
+
+.card-decaration {
+  width: 966px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-decaration-box {
+width: 100%;
+display: flex;
+align-items: center;
+}
+.cubic {
+  display: inline-block;
+width: 60px;
+height: 60px ;
+background-color: #F8F8F2;
+border: 4px solid #C99B67;
+}
+.border {
+  width: 87%;
+  border-top: 3px dashed #C99B67;
+}
+.cubic-right {
+  width:60px;
+}
+
+
+.works-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0 0 0;
+  padding: 0;
+}
+.works-item:last-child::after {
+background-image: url("../images/sticker-3\ 1.png");
+background-position: center;
+content: "";
+width: 222px;
+height: 159px;
+position: absolute;
+top: -54%;
+right: 15%;
+}
+.works-item {
+  position: relative;
+  background-color: #F8F8F2;
+  padding: 20px;
+  width: 433px;
+}
+.works-number {
+  margin: 0;
+  text-align: right;
+  font-weight: 400;
+font-size: 64px;
+line-height: 75px;
+color: var(--main-text-color-black);
+}
+.works-title h3{
+margin: 0;
+text-transform: uppercase;
+}
+.works-title{
+ 
+  width: 320px;
+  margin: 45px 0 10px 0;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 47px;
+  color: var(--main-text-color-black);
+}
+.works-text{
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--main-text-color-black);
+}
+.btn-yellow {
+  background-color: 
+  #C99B67;
+}
+.btn-group {margin-top: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.icon-grop {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 150px;
+  display: flex;
+  justify-content: space-between;
+}
