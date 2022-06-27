@@ -1,9 +1,4 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
+
 
 :root {
   --main-text-color-black:#333333;
@@ -156,6 +151,7 @@ line-height: 24px;
 margin: 0 0 34px 0;
 }
 .btn {
+  cursor: pointer;
   padding: 16px 24px;
   border-radius: 100px;
   border: none;
@@ -327,8 +323,12 @@ line-height: 28px;
   left: 0 ;
   list-style: none;
   padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 300px;
 }
 .choose-item:nth-child(1):before {
@@ -389,14 +389,24 @@ text-transform: uppercase;
 
 .card-decaration {
   width: 966px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .card-decaration-box {
 width: 100%;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-align-items: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
 }
 .cubic {
   display: inline-block;
@@ -416,8 +426,12 @@ border: 4px solid #C99B67;
 
 .works-list {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 20px 0 0 0;
   padding: 0;
 }
@@ -469,9 +483,15 @@ text-transform: uppercase;
   #C99B67;
 }
 .btn-group {margin-top: 60px;
+display: -webkit-box;
+display: -ms-flexbox;
 display: flex;
-align-items: center;
-justify-content: center;
+-webkit-box-align: center;
+    -ms-flex-align: center;
+        align-items: center;
+-webkit-box-pack: center;
+    -ms-flex-pack: center;
+        justify-content: center;
 }
 
 .icon-grop {
@@ -479,6 +499,191 @@ justify-content: center;
   padding: 0;
   margin: 0;
   width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.about-img {
+  background-image: url("../images/about-img/coffe-avto.png");
+}
+.about-texts{
+margin: 0;
+}
+.about-text{
+  width: 626px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+}
+.about-title {
+  font-weight: 700;
+font-size: 48px;
+line-height: 56px;
+color: var(--main-title-color-black);
+}
+.card-cit {
+  position: relative;
+  display: flex;
+  align-items: center;
+ justify-content: flex-end;
+}
+.coffe-chit-img {
+  margin-right: 185px;
+  background-image: url("../images/about-img/chit.png");
+  width: 360px;
+  height: 364px;
+}
+.chit {
+  padding: 160px 0 200px 0;
+  margin-bottom: 160px;
+}
+.card-cit::before {
+  width:  450px;
+  height: 375px;
+  background-image: url("../images/leaves2.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: left;
+  content: "";
+  position: absolute;
+  top: -20%;
+  left: -14%;
+}
+.cuality-card {
+ position: relative;
+  padding: 100px 0 118px 0;
+  display: flex;
+  
+}
+.cuality-title {
+  width: 397px;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 59px;
+  margin: 0 0 24px 0;
+  color: var(--main-text-color-white);
+  text-transform: uppercase;
+}
+.cuality-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0;
+  color: var(--main-text-color-white);
+}
+.cuality-content {
+  width: 639px;
+  margin-right: 38px;
+  margin-left: 105px;
+}
+.cuality-img {
+  position: absolute;
+  top: -80px;
+  right:  0;
+}
+.headquarters-inner {
+  padding: 50px 0;
+  margin: 0px 20px 50px 20px;
+  background-image: url(../images/Group\ 3620.png);
+}
+.headquarters-inner .works-text {
+  width: 160px;
+  margin: 0;
+}
+.headquarters-inner .works-title {
+  width: 231px;
+
+
+
+
+}
+.headquarters-inner .works-item {
+  padding: 140px 20px 40px 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content:flex-end;
+}
+.headquarters-inner .works-item::before {
+  content: "";
+  width: 120px;
+  height: 145px;
+  position: absolute;
+  background-image: url("../images/about-img/carta3.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  top: 45px;
+  right: 55px;
+}
+.headquarters-inner .works-item:nth-child(2):before {
+  background-image: url("../images/about-img/carta2.svg");
+}
+.headquarters-inner .works-item:nth-child(3):before {
+  background-image: url("../images/about-img/carta1.svg");
+}
+.headquarters-inner .works-item:nth-child(3)::after {
+ display: none;
+}
+
+.modal {
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background-color: #00000080;
+}
+.card-modal {
+  position: absolute;
+  top: 25%;
+  left: 30%;
+  width: 561px;
+  background-color:#F8F8F2;
+}
+.card-header {
+  padding: 19px 30px;
+  background-color: #C99B67;
+}
+.card-section {
+padding: 50px 30px;
+}
+.modal-strong {
+
+}
+.modal-strong strong {
+color: var(--main-btn-color-grey);
+}
+.modal-title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 52px;
+  color: var(--main-text-color-white);
+  text-transform: uppercase;
+  margin: 0;
+}
+.modal-text {
+  margin: 10px 0 0 0 ; 
+  font-weight: 400;
+font-size: 18px;
+line-height: 26px;
+color: var(--main-text-color-black);
+}
+.card-footer {
+  padding: 0 30px 50px 30px;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.sum-text {
+  font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+color: var(--main-title-color-black);
+}
+.modal-show {
+  display: block;
 }
