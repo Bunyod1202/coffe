@@ -1,7 +1,7 @@
 
-
 :root {
   --main-text-color-black:#333333;
+  --main-title-black:#555555;
   --main-text-color-white:#ffffff;
   --main-title-color-black:#000000;
   --main-btn-color-grey:#0A775F;
@@ -41,7 +41,18 @@ body {
   overflow-x: hidden;
 
 }
-
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 a {
   text-decoration: none;
   display: inline-block;
@@ -655,7 +666,7 @@ color: var(--main-title-color-black);
 .card-modal {
   position: absolute;
   top: 25%;
-  left: 30%;
+  left: 32%;
   width: 561px;
   background-color:#F8F8F2;
 
@@ -719,6 +730,7 @@ color: var(--main-title-color-black);
           animation-iteration-count: 1;
   -webkit-animation-timing-function: linear;
           animation-timing-function: linear;
+          
 }
 @-webkit-keyframes modal {
   0%{
@@ -739,4 +751,196 @@ color: var(--main-title-color-black);
     -webkit-transform: translateY(0);
             transform: translateY(0);
   }
+}
+
+.pick-your-coffee{
+  padding-top: 80px ;
+  margin-top: 20px;
+}
+.pick-your-coffee .works-item:nth-child(3)::after {
+  display: none;
+
+}
+
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list-item {
+  margin-bottom: 35px;
+}
+
+.list-item:nth-child(1) .radio-group::before {
+  content: "";
+  width: 410px;
+  height: 340px;
+  position: absolute;
+  bottom: -300px;
+  right: -352px;
+  background-image: url("../images/leaves4.svg"),url("../images/leaves1.svg");
+  background-size: contain,250px;
+  background-repeat: no-repeat;
+  background-position: right,right 50px top 150px;
+}
+.list-item:nth-child(5) .radio-group::before {
+  content: "";
+  width: 410px;
+  height: 340px;
+  position: absolute;
+  bottom: -180px;
+  left: -1065px;
+  background-image: url("../images/leaves3.svg");
+  background-size: contain,250px;
+  background-repeat: no-repeat;
+  background-position: right,right 50px top 150px;
+}
+.list-item:nth-child(3) .radio-group::before {
+  content: "";
+  width: 410px;
+  height: 340px;
+  position: absolute;
+  bottom: -180px;
+  left: -1005px;
+  background-image: url('../images/leaves2.svg');
+  background-size: contain,250px;
+  background-repeat: no-repeat;
+  background-position: right,right 50px top 150px;
+}
+
+.list-link {
+  font-weight: 500;
+font-size: 28px;
+line-height: 33px;
+color: var(--main-title-black);
+border-bottom: 3px dashed transparent;
+}
+.list-link:hover { 
+  border-bottom: 3px dashed #C99B67;
+  color: var(--main-title-color-black);
+}
+.create-me-plan {
+  display: flex;
+  justify-content: space-between;
+}
+.btn-dropdown {
+  text-align: left;
+  z-index: 2;
+  cursor: pointer;
+  padding: 0 84px 0 0;
+
+  font-weight: 700;
+font-size: 40px;
+line-height: 47px;
+color: var(--main-title-color-black);
+background-color: transparent;
+border: none;   
+position: relative;
+
+}
+.btn-dropdown::before {
+  content: "";
+  width: 20px;
+  height: 12px;
+  position: absolute;
+  top: 20px;
+  right: 0;
+  background-image: url("../images/arrow.svg");
+background-repeat: no-repeat;
+}
+.radio-group {
+  position: relative;
+  display: none;
+  width: 680px;
+}
+.card-box {
+  margin-top: 20px;
+  padding: 30px 16px;
+  display: inline-block;
+  width: 208px;
+  height: 220px;
+  background-color: #0a775f33;
+
+}
+.box-title {
+  display: inline-block;
+  font-weight: 500;
+font-size: 24px;
+line-height: 28px;
+color: var(--main-text-color-black);
+margin-bottom: 10px;
+}
+.box-text {
+  display: inline-block;
+  font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+color: var(--main-text-color-black);
+}
+input:checked + .card-box{
+  background-color: #0A775F;
+
+}
+input:checked + .card-box  .box-text{
+  background-color: #0A775F;
+  color: var(--main-text-color-white);
+}
+input:checked + .card-box .box-title{
+  color: var(--main-text-color-white);
+
+}
+.radio-group-show {
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  animation-name: drop;
+  animation-duration: 0.5s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+ .btn-dropdown:hover:before {
+ transform: rotate(180deg);
+}
+@keyframes drop {
+  0% {
+    opacity: 0;
+   transform: translateY(-90px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.banner-img {
+  background-image: url("../images/banner.png");
+}
+.cards {
+
+  width: 660px;
+  margin-bottom: 20px;
+  padding: 40px 21px;
+  background-color: var(--main-btn-color-yellow);
+}
+
+.cards-title {
+  font-weight: 400;
+font-size: 16px;
+line-height: 19px;
+color: var(--main-text-color-white);
+}
+.cards-text {font-weight: 500;
+  font-size: 24px;
+  line-height: 34px;
+  color: var(--main-text-color-white);
+
+}
+.cards-text span {
+  color: #000;
+}
+.button-group {
+  margin-top: 0;
+  justify-content: flex-end;
+  margin-bottom: 50px;
 }
